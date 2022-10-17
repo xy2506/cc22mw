@@ -1,4 +1,4 @@
-book_filename: "cc"
+book_filename: "cc22mw"
 new_session: true
 before_chapter_script: _common.R
 delete_merged_file: true
@@ -14,7 +14,6 @@ rmd_files: [
   'assignment.Rmd',
   'instructions.Rmd',
   'sample_project.Rmd',
-  'timeseriesanalysis.Rmd',
 
   # Part: Cheatsheets
  
