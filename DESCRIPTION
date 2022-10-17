@@ -9,10 +9,7 @@ Suggests:
     bookdown,
     bslib,
     downlit,
-    gganimate,
     ggplot2,
-    gifski,
-    transformr,
     withr,
     xml2
 Remotes:
