@@ -11,6 +11,7 @@ Suggests:
     downlit,
     gganimate,
     ggplot2,
+    gifski,
     withr,
     xml2
 Remotes:
