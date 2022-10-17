@@ -9,6 +9,8 @@ Suggests:
     bookdown,
     bslib,
     downlit,
+    gganimate,
+    ggplot2,
     withr,
     xml2
 Remotes:
