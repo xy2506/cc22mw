@@ -9,6 +9,7 @@ Suggests:
     bookdown,
     bslib,
     downlit,
+    ggmap,
     ggplot2,
     withr,
     xml2
