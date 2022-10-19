@@ -14,6 +14,7 @@ library(ggmap)
 
 ```{r, include=FALSE}
 # New API key added 2022-10-18
+# Why isn't this working!?
 register_google(Sys.getenv("API_TOKEN"))
 ```
 
