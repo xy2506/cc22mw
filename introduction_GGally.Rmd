@@ -1,0 +1,192 @@
+# Introductions of GGally
+
+Xinhao Dai
+
+### Introduction
+
+ggplot2 is a R package for plotting based on grammar of graphics. GGally is a extension of ggplot2. It adds several functions to reduce the difficulies of combining different geoms.
+
+### Preparation
+R needs ggplot2, ggforce, GGally, reshape, boom.helpers to run this introduction.
+```{r, include = FALSE, eval = FALSE}
+knitr::opts_chunk$set(echo = TRUE,eval = FALSE)
+```
+
+```{r, warning = FALSE, message = FALSE}
+rm(list = ls())
+
+# install packages
+library(ggplot2)
+library(ggforce)
+library(GGally)
+library(reshape)
+library(broom.helpers)
+```
+
+### GGally::ggcoef_model()
+The ggcoef_model() function is designed to show the coefficients of a regression model on a plot.
+
+For example, the following case demonstrate the coefficients of a logistical regression. the positions of the points indicate the values of coefficients. And the type of points indicate whether the coefficient is significant or not in this model. Moreover, the plot also demonstrate the confidence interval of the coefficients.
+
+With the function, we can also compare different models. If the full model has a non-significant variable, we can remove it from the model, and see how other coefficients change.
+
+```{r ggcoef_model}
+data = read.table("http://users.stat.ufl.edu/~rrandles/sta4210/Rclassnotes/data/textdatasets/KutnerData/Appendix%20C%20Data%20Sets/APPENC10.txt", header = FALSE)
+data = data[,-1]
+colnames(data) = c("Age", "SES", "Sector", "Disease", "Savings")
+
+# Recoding:
+health = data[, -5]
+health$Sector = health$Sector - 1
+health$SES = as.factor(health$SES)
+health = cbind(health, model.matrix(~ -1 + health$SES)[,2:3])
+health = health[, -2]
+colnames(health)[4:5] = c("SES2", "SES3")
+health = health[,c(1,4,5,2,3)]
+# health$SES2 = as.factor(health$SES2)
+# health$SES3 = as.factor(health$SES3)
+
+mod1 = glm(Disease ~ .,  family = "binomial", data = health, subset = 1:98)
+ggcoef_model(mod1)
+
+mod1 <- lm(Fertility ~ ., data = swiss)
+mod2 <- step(mod1, trace = 0)
+mod3 <- lm(Fertility ~ Agriculture + Education * Catholic, data = swiss)
+models <- list("Full model" = mod1, "Simplified model" = mod2, "With interaction" = mod3)
+
+ggcoef_compare(models)
+```
+
+### GGally::ggmatrix()
+
+ggmatrix() is a function for managing multiple plots in a matrix-like layout.
+
+The plot "Total Bill vs Tip" shows an example of ggmatrix(). It shows four scatter plots with respect to smokers and sex. In this way, we can easily see how smokers and sex inflence the pattern of total bill vs tip.
+
+```{r ggmatrix(), warning = FALSE, message = FALSE}
+plotList <- list()
+for (i in 1:8) {
+  plotList[[i]] <- ggally_text(paste("Plot #", i, sep = ""))
+}
+
+# bare minimum of plotList, nrow, and ncol
+ggmatrix(plotList, nrow = 2, ncol = 4, xAxisLabels = c("A", "B", "C","D"), yAxisLabels = c("E", "F"), title = "Matrix Title")
+
+data(tips, package = "reshape")
+plotList <- list(
+  qplot(total_bill, tip, data = subset(tips, smoker == "No" & sex == "Female")),
+  qplot(total_bill, tip, data = subset(tips, smoker == "Yes" & sex == "Female")), 
+  qplot(total_bill, tip, data = subset(tips, smoker == "No" & sex == "Male")) ,
+  qplot(total_bill, tip, data = subset(tips, smoker == "Yes" & sex == "Male"))
+)
+
+
+pm<-ggmatrix(
+  plotList, nrow = 2, ncol = 2,
+  yAxisLabels = c("Female", "Male"),
+  xAxisLabels = c("Non Smoker", "Smoker"),
+  title = "Total Bill vs Tip",
+  showStrips = NULL 
+)
+pm
+pm+theme_bw()
+```
+
+### GGally::ggpairs()
+
+ggpairs() is a special form of ggmatrix(). It will provides to different comparison of pairwise comparison of multivariate data.
+
+tips is a dataset containing 7 different variables and the variables are in numeric, factor, integer types. ggpairs by default create different kind of plot for comparison of variables in different types.
+
+You can reduce displayed columns by setting "columns" parameter. You can add aesthetics with "mapping" parameter. The theme of plot matrix can be modified as ggmatrix().
+
+```{r ggpairs(), warning = FALSE, message = FALSE}
+data(tips, package = "reshape")
+str(tips)
+ggpairs(tips)
+ggpairs(tips, columns = c(1,2,6))
+ggpairs(tips, mapping = aes(color = sex), columns = c(1,2,6))
+ggpairs(tips, columns = c(1,2,6))+theme_bw()
+```
+
+### GGally::ggally\_\*()
+
+ggally\_\*() is a set of high-level plots available in "GGally" to be used in ggpairs.
+
+ggally_point() creates a scatter plot.
+
+ggally_cor() calculates the correlation between two variables.
+
+ggally_density() draws the density plot.
+
+ggally_smooth_lm() fits a linar regression and draws the line on the scatter plot. The shallow stands for the confidence interval for mean y given x.
+
+#### Bivariate plot
+##### 2x continuous variables
+
+```{r 2x continuous variables, warning = FALSE, message = FALSE}
+ggally_points(tips, aes(x = total_bill, y = tip, colour = time))
+ggally_cor(tips, aes(x = total_bill, y = tip, colour = time))
+ggally_density(tips, aes(x = total_bill, y = tip, colour = time))
+ggally_smooth_lm(tips, aes(x = total_bill, y = tip, colour = time))
+```
+
+##### 2x discrete variables
+
+ggally_colbar() draws a colored stacked bar chat, the colour aesthetic is not taken into account.
+
+ggally_count() draws a plot with each axis representing a discrete variable, the size of the rectangle is proportion to the count of samples belonging to this category.
+
+ggally_crosstable() is like ggally_count() except that it explictly shows the count of every category.
+
+```{r 2x discrete variables, warning = FALSE, message = FALSE}
+ggally_colbar(tips, aes(x = day, y = smoker))
+ggally_count(tips, aes(x = day, y = smoker))
+ggally_crosstable(tips, aes(x = day, y = smoker))
+```
+
+##### with 1x continuous and 1x discrete variables
+
+ggally_box() draws a boxplot of x axis taking y axis as category.
+
+ggally_density draws a density plot of x with y axis as category, the color of the density plot indentifies the density of a specific x in a y group.
+
+ggally_facetdensitystrip() creates the density plot of x taking y as category. We can compare the distribution of the continuous variable in different y category.
+
+```{r with 1x continuous and 1x discrete variables, warning = FALSE, message = FALSE}
+ggally_box(tips, aes(x = total_bill, y = day))
+ggally_denstrip(tips, aes(x = total_bill, y = day))
+ggally_facetdensitystrip(tips, aes(x = total_bill, y = day))
+```
+
+##### Diagonal plots
+###### with 1x continuous variable
+ggally_densityDiag() creates the density plot of the variable on the diagonal.
+```{r with 1x continuous variable, warning = FALSE, message = FALSE}
+ggally_densityDiag(tips, aes(x = total_bill))
+```
+
+##### with 1x discrete variable
+
+ggally_autopointDiag() creates cluster plots for the variable on the diagonal. The cluster's size is proportional to the count of the variables in this category. 
+
+ggally_barDiag() creates bar chart for the variable on the diagonal.
+
+```{r with 1x discrete variable, warning = FALSE, message = FALSE}
+ggally_autopointDiag(tips, aes(x = day, colour = time))
+ggally_barDiag(tips, aes(x = day))
+```
+
+
+
+
+### GGally::ggbivariate()
+The function is used to show the relationship between one outcome category and several independent explanatory categories.
+
+The plot is automatically chosen by the function according to the type of the outcome category and the explanatory category.
+
+```{r GGally::ggbivariate() }
+data(tips, package = "reshape")
+ggbivariate(tips, outcome = "smoker", explanatory = c("day", "time", "sex", "tip"))
+```
+
