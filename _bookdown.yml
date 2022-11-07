@@ -14,11 +14,11 @@ rmd_files: [
   'assignment.Rmd',
   'instructions.Rmd',
   'sample_project.Rmd',
-  'sandbox.Rmd',
 
   # Part: Cheatsheets
  
   # Part: Tutorials
+  'mapcharts.Rmd',
   
   # Part: Workshops
   
