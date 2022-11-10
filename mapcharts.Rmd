@@ -1,0 +1,154 @@
+```{r, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Map Plots with Highcharts
+
+Hugo Ginoux
+
+*Highcharts* is originally an extremely complete Javascript library for data visualization. Its R wrapper version is the library "highcharter". It is more difficult to understand than ggplot2 but provides an interactivity that is very satisfying.
+
+In this chapter, we will explore the possibility to create *map charts*, that is to say heatmaps where the colored cells have the shape of countries, regions or states. Here is a raw example, showing the GDP of each state in the US (with random data):
+
+```{r load}
+library(highcharter)
+library(dplyr)
+library(readxl)
+
+```
+
+
+```{r firstexample}
+mapdata <- get_data_from_map(download_map_data("custom/usa-and-canada"))
+
+fake_gdp <- data.frame(code=mapdata$`hc-a2`) %>%
+  mutate(value = 1e5 * abs(rt(nrow(mapdata), df = 10)))
+
+hcmap(
+  "custom/usa-and-canada",
+  data = fake_gdp,
+  value = "value",
+  joinBy = c("hc-a2", "code"),
+  dataLabels = list(enabled = TRUE, format = "{point.name}"),
+  borderColor = "#FAFAFA",
+  borderWidth = 0.1,
+  tooltip = list(
+    valueDecimals = 2,
+    valuePrefix = "$",
+    valueSuffix = "USD"
+  )
+) %>%
+  hc_title(text = "Fake GDP per State") %>%
+  hc_add_theme(hc_theme_ffx())
+
+```
+
+Spectacular, isn't it ? Let's dive into the different parts of the code with another example plotting the proportion of Christians in 2020 in the different European countries.
+
+### Collect data
+
+You need to have a dataframe containing at least the name of the contry and the value to plot in the heatmap. In our example, the data comes from https://www.worldreligiondatabase.org/. I downloaded it under the form of an xlsx file, and stored it into my personal server.
+
+```{r collect}
+
+data = read_excel("resources/mapcharts/religions.xlsx") 
+data = data[data[['Religion 1']]=='Christians', c('Country Name','Religion 1','Pct_2020')]
+
+head(data)
+```
+
+
+### Download the map data and filter
+
+Then, you need to download the map info with get_data_from_map(download_map_data(name_of_geography)). The list of available geographies with examples is here : https://code.highcharts.com/mapdata/ (there are a lot!). In our example, we need a map of Europe.
+
+```{r download}
+
+mapdata = get_data_from_map(download_map_data("custom/europe"))
+
+mapdata
+```
+
+Then, we only keep the rows where the country is in Europe : we filter data by mapdata.
+
+```{r filter}
+data = data[data[['Country Name']]%in%mapdata$name,]
+```
+
+### Plot the map
+
+We are now ready to plot a first version of the map! We simply have to call the function hcmap with these arguments:
+
+* which map we will use : in our case, "custom/europe" (the same argument than inside download_map_data())
+* data : the dataframe containing the names of the countries and the value to plot
+* value : the name of the column used in the heatmap : in our case, "Pct_2020"
+* joinBy : the names of the columns in the 2 dataframes corresponding to the names of the countries. The names must correspond : "UK" in the first one and "United Kingdom" in the other would not work
+
+```{r map}
+hcmap(
+  "custom/europe",
+  data = data,
+  value = "Pct_2020",
+  joinBy = c("name", "Country Name")
+)
+```
+
+The result is already interesting. But some parameters can be added to make the chart even more impressive.
+
+### Parameters
+
+#### Add labels
+
+The parameter "datalabels" can display the names of the countries.
+
+```{r labels}
+hcmap(
+  "custom/europe",
+  data = data,
+  value = "Pct_2020",
+  joinBy = c("name", "Country Name"),
+  dataLabels = list(enabled = TRUE, format = "{point.name}")
+)
+```
+
+#### Plot in %
+
+The parameter "tooltip" allows us to modify what is displayed when the mouse hovers a country. Here, I plotted the proportion in %, rounded it to only 1 decimal and added a suffix "%".
+
+```{r %}
+data['Pct_2020_%'] = data['Pct_2020']*100
+
+hcmap(
+  "custom/europe",
+  data = data,
+  value = "Pct_2020_%",
+  joinBy = c("name", "Country Name"),
+  dataLabels = list(enabled = TRUE, format = "{point.name}"),
+  tooltip = list(
+    valueDecimals = 1,
+    valueSuffix = '%'
+  )
+)
+```
+
+#### Add title, theme, colors
+
+You can add a title with the function "hc_title". It is also possible to add subtitles. The function "hc_add_theme" adds a theme. Finally, you can change the min and max colors of the heatmap by giving the hexadecimal codes in the function "hc_colorAxis". The missing values would always appear in white.
+
+```{r title}
+
+hcmap(
+  "custom/europe",
+  data = data,
+  value = "Pct_2020_%",
+  joinBy = c("name", "Country Name"),
+  dataLabels = list(enabled = TRUE, format = "{point.name}"),
+  tooltip = list(
+    valueDecimals = 1,
+    valueSuffix = '%'
+  )
+) %>%
+  hc_title(text = "Proportion of Christian per country in 2020") %>%
+  hc_add_theme(hc_theme_ffx()) %>% 
+  hc_colorAxis(minColor = "#4242f5", maxColor = "#f54242")
+```
