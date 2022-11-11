@@ -14,9 +14,10 @@ rmd_files: [
   'assignment.Rmd',
   'instructions.Rmd',
   'sample_project.Rmd',
-
+  
   # Part: Cheatsheets
- 
+  'ggmap_cheatsheet.Rmd',
+  
   # Part: Tutorials
   'mapcharts.Rmd',
   
