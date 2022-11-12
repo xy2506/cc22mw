@@ -25,6 +25,7 @@ Suggests:
     AppliedPredictiveModeling,	
     gridExtra,	
     caTools,
-    kernlab
+    kernlab,
+    gbm
 Remotes:
     hadley/emo
