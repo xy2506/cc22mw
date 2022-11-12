@@ -24,6 +24,7 @@ Suggests:
     dplyr,	
     AppliedPredictiveModeling,	
     gridExtra,	
-    caTools
+    caTools,
+    kernlab
 Remotes:
     hadley/emo
