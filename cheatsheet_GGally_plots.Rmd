@@ -1,4 +1,4 @@
-# Cheatsheet of GGally
+# Cheatsheet of GGally (including ggcoef_model and ggpairs)
 
 Xinhao Dai
 
