@@ -23,6 +23,7 @@ rmd_files: [
   'machine_learning_tutorial.Rmd',
   
   # Part: Workshops
+  'edavsurveyandanalysis.Rmd',
   
   # Part: Appendices
   'appendix_initial_setup.Rmd', # contains PART header
