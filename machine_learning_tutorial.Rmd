@@ -2,9 +2,6 @@
 
 Feifan Li
 
-```{r, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE,warning = FALSE, message = FALSE)
-```
 
 ```{r}
 library(caret)
@@ -103,7 +100,7 @@ ggplot(train_scaled, aes(x=Species, y=Sepal.Length))+
 
 In most of the datasets, there usually contains some missing values. In this case, we need to impute them with values, and there are several ways to achieve this goal, including mean, KNN, Random Forest, or special symbols. In this tutorial, I will briefly discuss the most common two methods: KNN and mean.
 
-**Mean**\
+**Mean**
 One easy way to fill in the missing value is using mean. For example, if one column or feature contains several missing values, we can compute the average of non-missing values and fill this value to those missing positions. The advantage of this method is that it is efficient and easy to implement; however, filing with mean does not accurately predict that value, which influences the accuracy.
 
 **KNN**
@@ -218,7 +215,7 @@ r_cv <- trainControl(method="repeatedcv",
 
 One of the most intuitive machine learning model is KNN, K nearest neighbor. The idea is that we firstly compute the closest K neighbors; then, we can use majority voting to derive our result. For example, if k=5, and three out of the five neighbors have the label of 1, while the other two have label of 0, our result is 1. One advantage of this algorithm is that it has no training process. For small datasets, we can complete the prediction in a short amount of time. However, when the dimension of dataset increases, this algorithm will suffer from the curse of dimension
 
-![**K Fold Cross Validation Process**](resources/machine_learning_tutorial/KNN.png)
+![**K Fold Cross Validation Process**](resources/machine_learning_tutorial/KNN.png){width="700px"}
 
 ```{r}
 set.seed(10)
