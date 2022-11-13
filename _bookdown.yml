@@ -17,6 +17,7 @@ rmd_files: [
   
   # Part: Cheatsheets
   'ggmap_cheatsheet.Rmd',
+  'googleVis.Rmd',
   
   # Part: Tutorials
   'mapcharts.Rmd',
