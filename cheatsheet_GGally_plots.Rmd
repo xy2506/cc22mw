@@ -13,7 +13,7 @@ In this project, I have learned how to do a quickly read through the documents o
 You can find a pdf version of the cheetsheet on [https://github.com/Russell-A/cheatsheet-for-ggally](https://github.com/Russell-A/cheatsheet-for-ggally/blob/main/cheatsheet_for_ggally.pdf). Below is an enclosed image of the cheatsheet.
 
 ```{r, echo=FALSE}
-knitr::include_graphics("cheatsheet_for_ggally-page-001.jpg")
+knitr::include_graphics("resources/cheatsheet_GGally_plots/cheatsheet_for_ggally-page-001.jpg")
 ```
 
 Reference: [https://ggobi.github.io/ggally/index.html](https://ggobi.github.io/ggally/index.html).
