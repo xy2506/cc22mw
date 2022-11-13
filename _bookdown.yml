@@ -14,12 +14,18 @@ rmd_files: [
   'assignment.Rmd',
   'instructions.Rmd',
   'sample_project.Rmd',
-
+  
   # Part: Cheatsheets
- 
+  'ggmap_cheatsheet.Rmd',
+  'googleVis.Rmd',
+  'tidytext_cheatsheet.Rmd',
+  
   # Part: Tutorials
+  'mapcharts.Rmd',
+  'machine_learning_tutorial.Rmd',
   
   # Part: Workshops
+  'edavsurveyandanalysis.Rmd',
   
   # Part: Appendices
   'appendix_initial_setup.Rmd', # contains PART header
