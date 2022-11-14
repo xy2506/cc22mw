@@ -26,6 +26,8 @@ Suggests:
     gridExtra,	
     caTools,
     kernlab,
-    gbm
+    gbm,
+    quantmod,
+    tidyquant    
 Remotes:
     hadley/emo
