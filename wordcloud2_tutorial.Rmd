@@ -60,7 +60,7 @@ wordcloud2(unigram_freq, color = "random-light", backgroundColor = "black")
   
 ### Rotation  
 We could set "minRotation", "maxRotation", and "rotateRatio" to rotate the texts in the cloud. "rotateRatio" of all the texts will be rotated within the scope (minRotation, maxRotation). The output of wordcloud2 should be a HTML widget. However, since it is possible to have knitting issues, We insert the word cloud.    
-```{r,fig.align='center'}
+```{r,fig.align='center',eval=FALSE}
 wordcloud2(unigram_freq, size = 1, minRotation = -pi/6, maxRotation = -pi/6,
   rotateRatio = 1)
 ```
@@ -69,7 +69,7 @@ wordcloud2(unigram_freq, size = 1, minRotation = -pi/6, maxRotation = -pi/6,
 </center>  
   
 If rotateRatio = 0.5, then only half of the words will be rotated. If minRotation $\neq$ maxRotation, words will be rotated between minRotation and maxRotation.  The output of wordcloud2 should be a HTML widget. However, since it is possible to have knitting issues, We insert the word cloud.     
-```{r,fig.align='center'}
+```{r,fig.align='center',eval=FALSE}
 wordcloud2(unigram_freq, size = 1, minRotation = -pi/3, maxRotation = -pi/6,
   rotateRatio = 0.5)
 ```
@@ -79,7 +79,7 @@ wordcloud2(unigram_freq, size = 1, minRotation = -pi/3, maxRotation = -pi/6,
   
 ### Specific shape inside the package  
 You can chose the shape of the cloud produced by setting a parameter for "shape", "wordcloud2" provide mutiple shapes for users, you can chose the one you like, such as "star", "circle", "cardioid", "diamond", "triangle-forward", "triangle", "pentagon." The output of wordcloud2 should be a HTML widget. However, since it is possible to have knitting issues, We insert the word cloud.    
-```{r,fig.align='center'}
+```{r,fig.align='center', eval=FALSE}
 wordcloud2(unigram_freq, size = 1,shape = 'star')
 ```
 <center>
