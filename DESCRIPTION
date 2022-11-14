@@ -28,6 +28,8 @@ Suggests:
     kernlab,
     gbm,
     quantmod,
-    tidyquant    
+    tidyquant,
+    devtools,
+    wordcloud2
 Remotes:
     hadley/emo
