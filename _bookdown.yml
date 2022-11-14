@@ -24,6 +24,7 @@ rmd_files: [
   # Part: Tutorials
   'mapcharts.Rmd',
   'machine_learning_tutorial.Rmd',
+  'quantmod_and_tidyquant_tutorials_and_comparison.Rmd',
   
   # Part: Workshops
   'edavsurveyandanalysis.Rmd',
