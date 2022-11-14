@@ -2,3 +2,4 @@ bookdown::bs4_book:
   repo:
     base: https://github.com/jtr13/cc22mw
     branch: main
+    icon: "fa-solid fa-chart-scatter"

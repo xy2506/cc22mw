@@ -17,12 +17,18 @@ rmd_files: [
   
   # Part: Cheatsheets
   'ggmap_cheatsheet.Rmd',
+  'googleVis.Rmd',
+  'tidytext_cheatsheet.Rmd',
+  'cheatsheet_of_ggally_plots.Rmd',
   
   # Part: Tutorials
   'mapcharts.Rmd',
   'machine_learning_tutorial.Rmd',
+  'quantmod_and_tidyquant_tutorials_and_comparison.Rmd',
+  'learning_echarts4r.Rmd',
   
   # Part: Workshops
+  'edavsurveyandanalysis.Rmd',
   
   # Part: Appendices
   'appendix_initial_setup.Rmd', # contains PART header
