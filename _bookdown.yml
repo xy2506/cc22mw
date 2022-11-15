@@ -27,6 +27,7 @@ rmd_files: [
   'quantmod_and_tidyquant_tutorials_and_comparison.Rmd',
   'learning_echarts4r.Rmd',
   'wordcloud2_tutorial.Rmd',
+  'color_deficiency.Rmd',
   
   # Part: Workshops
   'edavsurveyandanalysis.Rmd',
