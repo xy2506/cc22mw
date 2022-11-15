@@ -36,6 +36,7 @@ Suggests:
     XML,
     lubridate,
     tidyr,
-    plotly
+    plotly,
+    dygraphs    
 Remotes:
     hadley/emo
