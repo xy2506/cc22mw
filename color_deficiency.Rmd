@@ -2,9 +2,7 @@
 
 Margaret Reed and Yaxin Hu
 
-```{r load-pkgs, include=F}
-load.packages("tidyverse")
-load.packages("ggokabeito")
+```{r}
 library(tidyverse)
 library(ggokabeito)
 ```
