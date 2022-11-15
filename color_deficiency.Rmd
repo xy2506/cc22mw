@@ -114,7 +114,7 @@ To easily use this palette in R, I like the `ggokabeito` package, which can be d
 
 Example with new color palette:
 
-```{r okabeito-plot}
+```{r}
 iris %>%
   ggplot(
     aes(x = Sepal.Length, y = Petal.Width, color = Species)
