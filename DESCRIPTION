@@ -30,6 +30,13 @@ Suggests:
     quantmod,
     tidyquant,
     devtools,
-    wordcloud2
+    wordcloud2,
+    RSelenium,
+    rvest,
+    XML,
+    lubridate,
+    tidyr,
+    plotly,
+    dygraphs    
 Remotes:
     hadley/emo
