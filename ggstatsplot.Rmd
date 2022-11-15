@@ -1,0 +1,9 @@
+# Cheatsheet of ggstatsplot in R
+
+Shaonan Wang, Baochan Jiang
+
+This cheatsheet is for ggstatsplot. {ggstatsplot} is an extension of {ggplot2} package for creating graphics with details from statistical tests. It can easily add statistical tests to graphs, support multiple tests, and display P value and other statistical indicators among data subsets in graphs. It visually shows the relationship between data sets and the results of statistical tests, makes data mining easy and fast. 
+
+{ggstatsplot} = "data visualization" + "statistical modeling"
+
+Use the link to check the cheatsheet: https://github.com/anna-shaonanw/ggstatsplot-cheatsheet/blob/main/ggstatsplot-cheatsheet.pdf
