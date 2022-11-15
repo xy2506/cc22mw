@@ -28,6 +28,7 @@ rmd_files: [
   'learning_echarts4r.Rmd',
   'wordcloud2_tutorial.Rmd',
   'color_deficiency.Rmd',
+  'inflation_web_scraping.Rmd',
   
   # Part: Workshops
   'edavsurveyandanalysis.Rmd',
