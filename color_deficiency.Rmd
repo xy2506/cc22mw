@@ -2,7 +2,7 @@
 
 Margaret Reed and Yaxin Hu
 
-```{r load-pkgs, include=F}
+```{r}
 load.packages("tidyverse")
 load.packages("ggokabeito")
 library(tidyverse)
@@ -64,7 +64,7 @@ Here is an example of what the standard ggplot color palette looks like with dif
 
 #### Original:
 
-```{r original-plot}
+```{r}
 iris %>%
   ggplot(
     aes(x = Sepal.Length, y = Petal.Width, color = Species)
@@ -84,7 +84,7 @@ Here is how this might plot look like with the above conditions:
 
 Increase Contrast:
 
-```{r contrast-plot}
+```{r}
 iris %>%
   ggplot(
     aes(x = Sepal.Length, y = Petal.Width, color = Species)
@@ -95,7 +95,7 @@ iris %>%
 
 Double Encoding:
 
-```{r shapes-plot}
+```{r}
 iris %>%
   ggplot(
     aes(x = Sepal.Length, y = Petal.Width, color = Species, shape = Species)
@@ -116,7 +116,7 @@ To easily use this palette in R, I like the `ggokabeito` package, which can be d
 
 Example with new color palette:
 
-```{r okabeito-plot}
+```{r}
 iris %>%
   ggplot(
     aes(x = Sepal.Length, y = Petal.Width, color = Species)
