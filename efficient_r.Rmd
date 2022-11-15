@@ -2,7 +2,7 @@
 
 Ruochen Zhang, Weipeng Li
 
-```{r setup, include=FALSE}
+```{r, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(profvis)  
 library(parallel)
