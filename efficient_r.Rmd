@@ -17,7 +17,7 @@ R is an interpreted language, but it calls compiled C, Fortran and other languag
 
 R is very flexible. For example, the variables are in dynamic types and the content and type can be modified. The flexible design brings extra burden to the operation and may make the programs slower. We can improve efficiency by paying attention to its flexibility and memory allocation.
 
-In this tutorial, we will introduce some methods to improve efficiency, including efficient programming  and parallel computation. We will also introduce how to use profiling tools to analyze program efficiency .
+In this tutorial, we will introduce some methods to improve efficiency, including efficient programming  and parallel computation. We will also introduce how to use profiling tools to analyze program efficiency.
 
 
 
