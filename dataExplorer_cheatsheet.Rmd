@@ -3,7 +3,7 @@
 Ryan McNamara and Matthieu Schulz
 
 As our community contribution, we created a cheat sheet about the DataExplorer package that automates the process of EDA.
-[our cheatsheet can be found here](resources/dataExplorer_cheatsheet/DataExplorer_cheat_sheet.pdf)
+[our cheatsheet can be found here](resources/dataExplorer_cheatsheet/DataExplorer_cheat_sheet.pdf){target="_blank"}
 
 ## Motivation for the contribution
 
