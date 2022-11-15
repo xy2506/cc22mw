@@ -29,6 +29,7 @@ rmd_files: [
   'color_deficiency.Rmd',
   'inflation_web_scraping.Rmd',
   'dygraph_tutorial.Rmd',
+  'two_fun_r_packages.Rmd',
   
   # Part: Workshops
   'edavsurveyandanalysis.Rmd',
