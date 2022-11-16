@@ -1,4 +1,4 @@
-# Lighnting Talk on GeoComputation with R
+# Lightning Talk on GeoComputation with R
 
 Shrujan Varma Penmetsa
 
@@ -8,11 +8,15 @@ Shrujan Varma Penmetsa
 
 The following are the resources for the presentation:
 
-PDF file with code examples and explanation: https://github.com/ShrujanPenmetsa/cc22mw/blob/geocomputationinr/resources/geocomputationinr/geocomputationwithr.html
+PDF file with code examples and explanation: 
 
 
-Powerpoint presentation slides : 
-https://github.com/ShrujanPenmetsa/cc22mw/blob/geocomputationinr/resources/geocomputationinr/geocomputationwithr.pptx
+[https://drive.google.com/file/d/1ozNDyHdTjSTOv8Z0OWdNGWLHvHnhagU8/view?usp=sharing]{target="_blank"}
+
+
+Powerpoint presentation slides :
+
+[https://docs.google.com/presentation/d/1lA05TuvMitmquZCoyMnhCng3RQ-Sgl2g/edit?usp=sharing&ouid=108784931668378752252&rtpof=true&sd=true]{target="_blank"}
 
 UNI - sp4155
 
@@ -20,6 +24,22 @@ UNI - sp4155
 # this prevents package loading message from appearing in the rendered version of your problem set
 knitr::opts_chunk$set(warning = FALSE, message = FALSE)
 ```
+
+
+
+Loading the libraries: 
+
+```{r}
+library(leaflet)
+library(sf) 
+library(raster)
+library(spData)
+library(spDataLarge)
+library(dplyr)
+library(tmap)
+library(ggplot2)
+```
+
 
 ### Topic : GeoComputation with R
 
@@ -46,7 +66,7 @@ In this presentation, we will briefly look at come of these libraries and the va
 Let us consider a very simple example. Suppose we need to give a small intro on where we are from, where we are residing currently, and what is our dream location, instead of giving a normal written or verbal explanation of the same, we can do it interactively by using the “leaflet” package in R.
 
 ```{r}
-library(leaflet)
+
 leaflet()%>%
   addProviderTiles("NASAGIBS.ViirsEarthAtNight2012") %>%
   addMarkers(
@@ -104,11 +124,6 @@ In this system London, for example, can be represented by the coordinates c(-0.1
 There are several spatial data objects in the sp library. One such object is "world". The world object displays several attributes of the all the continents like population , life expectancy , area (size) , gdp , etc. We will be using this object to show some of the library features.
 
 ```{r}
-library(sf) 
-library(raster)
-library(spData)
-library(spDataLarge)
-
 names(world)
 ```
 
@@ -164,14 +179,6 @@ Another important library: “tmap”
 The object that we will be using to demonstrate the various features and attributes of tmap is nz. nz is a spatial object that will be passed to tm_shape. We will demonstrate how additional layers can be added just like we do in ggplot2.
 
 ```{r}
-library(sf)
-library(raster)
-library(dplyr)
-library(spData)
-library(spDataLarge)
-library(tmap)
-library(leaflet)
-library(ggplot2)
 
 tm_shape(nz) + tm_fill() 
 ```
