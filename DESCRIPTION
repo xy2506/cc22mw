@@ -30,6 +30,24 @@ Suggests:
     quantmod,
     tidyquant,
     devtools,
-    wordcloud2
+    wordcloud2,
+    RSelenium,
+    rvest,
+    XML,
+    lubridate,
+    tidyr,
+    plotly,
+    dygraphs,
+    profvis,
+    parallel,
+    bench,
+    ggokabeito,
+    autoplotly,
+    ggfortify,
+    cluster,
+    changepoint,
+    KFAS,
+    strucchange,
+    splines
 Remotes:
     hadley/emo

@@ -2,9 +2,7 @@
 
 Margaret Reed and Yaxin Hu
 
-```{r load-pkgs, include=F}
-load.packages("tidyverse")
-load.packages("ggokabeito")
+```{r}
 library(tidyverse)
 library(ggokabeito)
 ```
@@ -64,7 +62,7 @@ Here is an example of what the standard ggplot color palette looks like with dif
 
 #### Original:
 
-```{r original-plot}
+```{r}
 iris %>%
   ggplot(
     aes(x = Sepal.Length, y = Petal.Width, color = Species)
@@ -75,16 +73,16 @@ iris %>%
 
 Here is how this might plot look like with the above conditions:
 
-![](images/original-1.png){width="290"} ![](images/original-2.png){width="290"} 
-![](images/original-3.png){width="290"} ![](images/original-4.png){width="290"} 
-![](images/original-5.png){width="290"} ![](images/original-6.png){width="290"}
-![](images/original-7.png){width="290"} ![](images/original-8.png){width="290"}
+![](resources/color_deficiency_images/original-1.png){width="290"} ![](resources/color_deficiency_images/original-2.png){width="290"} 
+![](resources/color_deficiency_images/original-3.png){width="290"} ![](resources/color_deficiency_images/original-4.png){width="290"} 
+![](resources/color_deficiency_images/original-5.png){width="290"} ![](resources/color_deficiency_images/original-6.png){width="290"}
+![](resources/color_deficiency_images/original-7.png){width="290"} ![](resources/color_deficiency_images/original-8.png){width="290"}
 
 **Ways to improve without changing color:**
 
 Increase Contrast:
 
-```{r contrast-plot}
+```{r}
 iris %>%
   ggplot(
     aes(x = Sepal.Length, y = Petal.Width, color = Species)
@@ -95,7 +93,7 @@ iris %>%
 
 Double Encoding:
 
-```{r shapes-plot}
+```{r}
 iris %>%
   ggplot(
     aes(x = Sepal.Length, y = Petal.Width, color = Species, shape = Species)
@@ -116,7 +114,7 @@ To easily use this palette in R, I like the `ggokabeito` package, which can be d
 
 Example with new color palette:
 
-```{r okabeito-plot}
+```{r}
 iris %>%
   ggplot(
     aes(x = Sepal.Length, y = Petal.Width, color = Species)
@@ -128,7 +126,7 @@ iris %>%
 
 
 
-![](resources/color_deficiency_images/new-1.png){width="290"} ![](images/new-2.png){width="290"} 
+![](resources/color_deficiency_images/new-1.png){width="290"} ![](resources/color_deficiency_images/new-2.png){width="290"} 
 ![](resources/color_deficiency_images/new-3.png){width="290"} ![](resources/color_deficiency_images/new-4.png){width="290"} 
 ![](resources/color_deficiency_images/new-5.png){width="290"} ![](resources/color_deficiency_images/new-6.png){width="290"}
 ![](resources/color_deficiency_images/new-7.png){width="290"} ![](resources/color_deficiency_images/new-8.png){width="290"}
