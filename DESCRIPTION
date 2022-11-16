@@ -48,6 +48,8 @@ Suggests:
     changepoint,
     KFAS,
     strucchange,
-    splines
+    splines,
+    bestparcoords
 Remotes:
-    hadley/emo
+    hadley/emo,
+    ShubhamKaushal15/bestparcoords
