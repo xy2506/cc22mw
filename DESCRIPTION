@@ -49,7 +49,14 @@ Suggests:
     KFAS,
     strucchange,
     splines,
-    bestparcoords
+    bestparcoords,
+    BSDA,
+    gapminder,
+    heatmaply,
+    treemap,
+    collapsibleTree,
+    networkD3
+    
 Remotes:
     hadley/emo,
     ShubhamKaushal15/bestparcoords

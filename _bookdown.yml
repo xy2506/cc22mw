@@ -38,6 +38,10 @@ rmd_files: [
   'become_better_business_analysts.Rmd',
   'ggstatsplot.Rmd',
   'bestparcoords.Rmd',
+  'hypothesis_testing_guide_in_r.Rmd',
+  'api_requests_and_web_scraping.Rmd',
+  'covid_shiny_dashboard.Rmd',
+  'interactive_plots_in_r.Rmd',
   
   # Part: Workshops
   'edavsurveyandanalysis.Rmd',
