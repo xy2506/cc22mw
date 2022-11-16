@@ -48,6 +48,20 @@ Suggests:
     changepoint,
     KFAS,
     strucchange,
-    splines
+    splines,
+    bestparcoords,
+    BSDA,
+    gapminder,
+    heatmaply,
+    treemap,
+    collapsibleTree,
+    networkD3,
+    leaflet,
+    sf,
+    raster,
+    spData,
+    spDataLarge,
+    tmap
 Remotes:
-    hadley/emo
+    hadley/emo,
+    ShubhamKaushal15/bestparcoords
