@@ -33,6 +33,7 @@ rmd_files: [
   'efficient_r.Rmd',
   'color_deficiency.Rmd',
   'ggfortify_and_autoplotly_tutorial.Rmd',
+  'become_better_business_analysts.Rmd',
   
   # Part: Workshops
   'edavsurveyandanalysis.Rmd',
