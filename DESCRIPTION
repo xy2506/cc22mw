@@ -28,6 +28,15 @@ Suggests:
     kernlab,
     gbm,
     quantmod,
-    tidyquant    
+    tidyquant,
+    devtools,
+    wordcloud2,
+    RSelenium,
+    rvest,
+    XML,
+    lubridate,
+    tidyr,
+    plotly,
+    dygraphs    
 Remotes:
     hadley/emo

@@ -26,7 +26,9 @@ rmd_files: [
   'machine_learning_tutorial.Rmd',
   'quantmod_and_tidyquant_tutorials_and_comparison.Rmd',
   'learning_echarts4r.Rmd',
-  'wordcloud2_tutorial.Rmd',
+  'inflation_web_scraping.Rmd',
+  'dygraph_tutorial.Rmd',
+  'two_fun_r_packages.Rmd',
   
   # Part: Workshops
   'edavsurveyandanalysis.Rmd',
