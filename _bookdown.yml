@@ -37,7 +37,6 @@ rmd_files: [
   'ggfortify_and_autoplotly_tutorial.Rmd',
   'become_better_business_analysts.Rmd',
   'ggstatsplot.Rmd',
-  'bioconductor.Rmd',
   
   # Part: Workshops
   'edavsurveyandanalysis.Rmd',
