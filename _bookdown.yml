@@ -20,16 +20,23 @@ rmd_files: [
   'googleVis.Rmd',
   'tidytext_cheatsheet.Rmd',
   'cheatsheet_of_ggally_plots.Rmd',
+  'cheatsheet_datascience.Rmd',
+  'plotly_cheatsheet.Rmd',
   
   # Part: Tutorials
   'mapcharts.Rmd',
   'machine_learning_tutorial.Rmd',
   'quantmod_and_tidyquant_tutorials_and_comparison.Rmd',
   'learning_echarts4r.Rmd',
-  'color_deficiency.Rmd',
   'inflation_web_scraping.Rmd',
   'dygraph_tutorial.Rmd',
   'two_fun_r_packages.Rmd',
+  'wordcloud_tutorial.Rmd',
+  'efficient_r.Rmd',
+  'color_deficiency.Rmd',
+  'ggfortify_and_autoplotly_tutorial.Rmd',
+  'become_better_business_analysts.Rmd',
+  'ggstatsplot.Rmd',
   
   # Part: Workshops
   'edavsurveyandanalysis.Rmd',
