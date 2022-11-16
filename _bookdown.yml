@@ -23,6 +23,7 @@ rmd_files: [
   'cheatsheet_datascience.Rmd',
   'plotly_cheatsheet.Rmd',
   'data_explorer_cheatsheet.Rmd',
+  'ggplot2_matplotlib_cheatsheet.Rmd',
   
   # Part: Tutorials
   'mapcharts.Rmd',
