@@ -54,7 +54,7 @@ Computers can do a lot more than we can imagine or perceive. One such domain whe
 The formal definition of Geocomputation is given as:
 
 
-GeoComputation is about using the various different types of geodata and about developing relevant geo-tools within the overall context of a 'scientific' approach (Openshaw and Abrahart,2000).
+GeoComputation is about using the various different types of geodata and about developing relevant geo-tools within the overall context of a 'scientific' approach (Openshaw and Abrahart,2000)
 
 
  In the past decade, several interactive softwares (like QGIS) have been developed that provide easy and effective representation of geodata. However, it is very difficult to make additional changes to these softwares. For example, it might be the case that u may need to add a new feature or functionality to your map and if the software does not have that feature that allows you to do so, you are left with very limited choices. This is where R language steps in. There are several libraries in r like “leaflet”, “sf”, and “tmap” that provide various functionalities and techniques to manipulate geodata.
