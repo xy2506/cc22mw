@@ -31,7 +31,7 @@ rmd_files: [
   'two_fun_r_packages.Rmd',
   'wordcloud_tutorial.Rmd',
   'efficient_r.Rmd',
-  'color_deficiency',
+  'color_deficiency.Rmd',
   'ggfortify_and_autoplotly_tutorial.Rmd',
   
   # Part: Workshops
