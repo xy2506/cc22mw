@@ -42,6 +42,7 @@ rmd_files: [
   'api_requests_and_web_scraping.Rmd',
   'covid_shiny_dashboard.Rmd',
   'interactive_plots_in_r.Rmd',
+  'introduction_to_plotly.Rmd',
   
   # Part: Workshops
   'edavsurveyandanalysis.Rmd',
