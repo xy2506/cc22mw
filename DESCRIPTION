@@ -39,6 +39,7 @@ Suggests:
     plotly,
     dygraphs,
     profvis,
-    parallel
+    parallel,
+    bench
 Remotes:
     hadley/emo
