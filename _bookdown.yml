@@ -45,6 +45,7 @@ rmd_files: [
   'covid_shiny_dashboard.Rmd',
   'interactive_plots_in_r.Rmd',
   'introduction_to_plotly.Rmd',
+  'ml_interview_concept_mindmap.Rmd',
   
   # Part: Workshops
   'edavsurveyandanalysis.Rmd',
