@@ -49,7 +49,8 @@ Suggests:
     KFAS,
     strucchange,
     splines,
-    bestparcoords
+    bestparcoords,
+    BSDA
 Remotes:
     hadley/emo,
     ShubhamKaushal15/bestparcoords
