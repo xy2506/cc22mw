@@ -38,6 +38,7 @@ rmd_files: [
   'become_better_business_analysts.Rmd',
   'ggstatsplot.Rmd',
   'bestparcoords.Rmd',
+  'hypothesis_testing_guide_in_r.Rmd',
   
   # Part: Workshops
   'edavsurveyandanalysis.Rmd',
