@@ -37,6 +37,10 @@ Suggests:
     lubridate,
     tidyr,
     plotly,
-    dygraphs    
+    dygraphs,
+    profvis,
+    parallel,
+    bench,
+    ggokabeito
 Remotes:
     hadley/emo
