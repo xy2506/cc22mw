@@ -8,7 +8,7 @@ library(dplyr)
 library(plotly)
 ```
 
-## Part 1 Motivation for the project
+## Motivation for the project
 
 In just a few days it will be time for Columbia students to begin choosing their spring 2023 classes. The University offers us a wealth of courses, and I am sure that many students, like me, are unsure of how to choose among the many courses of interest. Yet we don't have a platform to disclose some of the information we care most about to help us make decisions. During my undergraduate years, there was a website that visually provided information about the courses, such as course name, course capacity size, average GPA of the course, etc. I borrowed the idea from [UIUC Course evaluation](https://waf.cs.illinois.edu/discovery/gpa_of_every_course_at_illinois/) and hope to build a platform to showcase the courses that belong to Columbia University. If this platform can be built and made public, it can greatly help students in course selection.
 
