@@ -56,7 +56,6 @@ Suggests:
     treemap,
     collapsibleTree,
     networkD3
-    
 Remotes:
     hadley/emo,
     ShubhamKaushal15/bestparcoords
