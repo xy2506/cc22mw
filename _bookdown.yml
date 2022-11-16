@@ -32,6 +32,7 @@ rmd_files: [
   'wordcloud_tutorial.Rmd',
   'efficient_r.Rmd',
   'color_deficiency',
+  'ggfortify_and_autoplotly_tutorial.Rmd',
   
   # Part: Workshops
   'edavsurveyandanalysis.Rmd',
