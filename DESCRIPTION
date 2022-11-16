@@ -55,7 +55,13 @@ Suggests:
     heatmaply,
     treemap,
     collapsibleTree,
-    networkD3
+    networkD3,
+    leaflet,
+    sf,
+    raster,
+    spData,
+    spDataLarge,
+    tmap
 Remotes:
     hadley/emo,
     ShubhamKaushal15/bestparcoords
