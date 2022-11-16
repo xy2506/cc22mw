@@ -1,6 +1,6 @@
-# interactive plots for different types of graphs in R
+# Interactive plots for different types of graphs in R
 
-Toni Chen and Tao Yu
+Tongni Chen and Tao Yu
 
 ```{r, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -28,9 +28,13 @@ We will introduce 5 packages in R which can create interactive plots.
 The first one is Plotly, a powerful package to make various types of interactive graphs, including line plots, histograms, bar charts, etc.
 
 After that, we would like to introduce other 4 packages which focus on one specific type of graph. You can probably have more options and flexiblility to create a desired type of graphs with these packages:
+
 heatmaply: create interactive heatmaps;
+
 dygraphs: focus on change of variables with respect to time;
+
 treemap: create interactive tree graphs;
+
 networkD3: create interactive network graphs.
 
 ## Plotly
