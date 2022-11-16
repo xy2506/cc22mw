@@ -31,6 +31,7 @@ rmd_files: [
   'two_fun_r_packages.Rmd',
   'wordcloud_tutorial.Rmd',
   'efficient_r.Rmd',
+  'color_deficiency',
   
   # Part: Workshops
   'edavsurveyandanalysis.Rmd',
