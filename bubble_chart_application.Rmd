@@ -14,7 +14,7 @@ In just a few days it will be time for Columbia students to begin choosing their
 
 On the University of Illinois at Urbana-Champaign website, the most dominant chart is the bubble chart. Therefore, I would also like to take this opportunity to supplement the EDAV course on bubble charts. The two remaining sections of the document on this page are: an introduction to bubble charts using the data mtcars built into R, and an introduction to plotly package. Although plotly package is briefly described on the EDAV website, I would like to give more examples and introduce how to scale bubble size, how to set pop up text in this package.
 
-## Part 2 Two methods to create bubble chart --- Example of mtcars
+## Two methods to create bubble chart --- Example of mtcars
 
 The bubble chart is actually one of the scatter diagrams, except that the bubble chart adds two new dimensions to the scatter diagram. Scatter plots are mainly applicable to two-dimensional continuous variable data, while bubble plots can add categorical data to the plot. The bubble size of the bubble chart provides a new intuitive display perspective, and in addition, the bubble color shade provides another indicator of the data. Due to the limitation on the dataset, I chose the mtcars dataset for a simple interpretation of the bubble chart first.
 
@@ -91,7 +91,7 @@ g5 <- plot_ly(df, x = ~wt, y = ~disp,
 g5
 ```
 
-## Part 3 Application of bubble chart --- GPAs of Courses at Columbia University
+## Application of bubble chart --- GPAs of Courses at Columbia University
 
 Next, we applied the bubble chart to something more useful, showing information about Columbia's courses. Due to limitations on the data and my lack of access to the data, I am getting basic course data from the website [CU Class Directory](http://www.columbia.edu/cu/bulletin/uwb/home.html), like course department, course name, enrollment for the fall 2022 semester, etc. The data regarding average gpa is not accurate enough. If anyone know how to get authoritative average gpa data for each course, please feel free to contact me at lx2305\@columbia.edu.
 
