@@ -1,5 +1,7 @@
 # Data Visualization with GGPlot2 (R) and MatPlotLib (Python) Cheat Sheet
 
+Kylie Brothers
+
 Motivation
 
 Throughout undergraduate, graduate, and professional careers, the two most widely used statistical languages are Python and R. Both of these languages have many similarities, but can have very differing syntaxes and coding implementations.
