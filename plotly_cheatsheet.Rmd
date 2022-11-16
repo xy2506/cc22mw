@@ -1,4 +1,5 @@
 #  Cheatsheet for Plotly
+
 Taichen Zhou, Yichen Huang
 
 For the community contribution for the EDAV class, we researched and created an R graphing library - plotly which can create integrative, publication-quality graphs. In this cheat sheet, we will provide the example of how to create basic charts, statistical charts, scientific charts etc. with Plotly.
