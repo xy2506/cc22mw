@@ -55,7 +55,7 @@ chordDiagram takes a datafame of three columns:
 
   In this example, we will use chord diagrams to make a simple visualization of the relationships between six main characters from the popular TV show Friends. We will visualize dyadic (pairwise) storylines between characters in the show across all episodes. Note that only dyads will be considered so for example, in Season 1 Ep.1, a plotline involving Chandler Joey and Ross will not be included in our chord diagram. The relationships here are non-directional (or symmetrical) meaning if for example, Joey is in a plot line with Rachel then Rachel is in a plotline with Joey.
   
-```{r Prepare the data}
+```{r}
 df = read.csv("https://raw.githubusercontent.com/apalbright/Friends/master/raw_data/friendsdata.csv")
 #The six friends are defined as follows: Chandler=1 Joey=2 Monica=3 Phoebe=4 Rachel=5 Ross=6
 friends= combn(c("Chandler", "Joey", "Monica", "Phoebe", "Rachel", "Ross"),2)
@@ -71,14 +71,14 @@ relations["Total"]=as.numeric(unlist(total))
 
 ```
 
-```{r plot a chord diagram of }
+```{r}
 chordDiagram(relations)
 ```
 
 ### Customizing color 
 
 The color schemes in chordDiagram are by default random. You'll notice that if you run the above code again the colors will change, and will appear different every time the function is called. Sometimes the random colors are very close in the spectrum. In order to better distinguish between different arcs, you can specify colors as well as adjust the transparency and border features of the arcs.
-```{r customize color and chord features}
+```{r}
 chordDiagram(relations,
              grid.col = c("#cc99c9", "#9ec1cf", "#9ee09e", "#fdfd97", "#feb144", "#ff6663"),
              transparency = 0.1,
@@ -92,7 +92,7 @@ circos.clear()
 
 Highlighting specific relationships one-by-one can make the chord diagram easier to read and understand. Here we'll add interactivity to our chord diagram using a second R package, **chorddiag**.
 
-```{r Applying the chorddiag function to Friends matrix data}
+```{r}
 mat_friends=c(0,36,63,6,7,12,
               36,0,7,20,26,14,
               63,7,0,18,12,4,
@@ -116,7 +116,7 @@ Further improvements: Since we know that this dataset is non-directional, the co
 
 We will now look at a more complex dataset that has more categories and is directional. We'll use the Migration dataset from the carData package in R which shows the number of migrants that travel between 10 provinces in Canada within a period between 1966-1971.
 
-```{r loading in and plotting data}
+```{r}
 canada = Migration%>%select(source, destination, migrants)
 chordDiagram(canada,
              grid.col = brewer.pal(10, 'Set3'),
@@ -129,7 +129,7 @@ chordDiagram(canada,
 
 We can simplify the data we're visualizing by taking out some of the thinner chords. Perhaps we're interested in the larger groups of migrants. We'll select a threshold of groups greater than 12,000.
 
-```{r reduce chord number}
+```{r}
 canada_subset=canada%>%filter(migrants>12000)%>%group_by(source)
 
 chordDiagram(canada_subset,
