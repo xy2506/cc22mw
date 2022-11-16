@@ -12,7 +12,7 @@ The motivation behind this project is the need to grasp the big picture of hypot
 I have thoroughly reviewed hypothesis testing by creating this cheatsheet, and learned how to summarize the assumptions of the tests based on the roadmap. Next time, I will include the detailed assumptions of each statistical test instead of just providing the code and the roadmap. 
 
 ## Hypothesis Testing Roadmap
-![This is a basic hypothesis testing guide for any kind of dataset.](resources/Hypothesis_Testing_Guide_in_R/hypothesis_testing.png)
+![This is a basic hypothesis testing guide for any kind of dataset.](resources/hypothesis_testing_guide_in_r/hypothesis_testing.png)
 
 ## Chi-Square Test in R
 </br>
