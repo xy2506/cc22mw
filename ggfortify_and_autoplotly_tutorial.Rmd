@@ -1,0 +1,168 @@
+# Tutorials for ggfortify and autoplotly
+
+Yujia Chen
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+library(autoplotly)
+library(ggplot2)
+library(ggfortify)
+library(cluster)
+library(changepoint)
+library(KFAS)
+library(strucchange)
+library(splines)
+```
+
+### Motivation
+
+The first time I used `ggfortify` package was to draw time series graph similar to `ggplot2` style. `ggfortify` package has a very easy-to-use and uniform programming interface that enables users to use one line of code to visualize statistical results using `ggplot2` as building blocks. The `ggfortify` package extends `ggplot2` for plotting some popular **R** package using a standardized approach, included in the function `autoplot()`.
+
+The `autoplotly` package provides functionalities to automatically generate interactive visualizations for many popular statistical results supported by `ggfortify` package with plotly and `ggplot2` style. 
+
+For example, we can hover the mouse over to each point in the plot to see more details, such as principal components information and the species this particular data point belongs to. We can also use the interactive selector to drag and select an area to zoom in, and zoom out by double clicking anywhere in the plot.
+
+`ggfortify` and `autoplotly` can be widely used in statistical analysis fields and they can be seen as powerful additions to the `ggplot2` package.
+
+
+### Examples
+
+#### Linear Models
+
+The `autoplotly()` function is able able to interpret `lm` fitted model objects and allows the user to
+select the subset of desired plots through the which parameter. The `which` parameter allows users to specify which of the subplots to display, for example:
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+autoplotly(
+  lm(Petal.Width ~ Petal.Length, data = iris),
+  which = c(4, 6), colour = "dodgerblue3",
+  smooth.colour = "black", smooth.linetype = "dashed",
+  ad.colour = "blue", label.size = 3, label.n = 5,
+  label.colour = "blue")
+```
+
+#### Principal Component Analysis
+
+The `autoplotly()` function works for the two essential classes of objects for principal component analysis (PCA) obtained from `stats` package: `stats::prcomp` and `stats::princomp`, for example: 
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+pca <- autoplotly(prcomp(iris[c(1, 2, 3, 4)]), data = iris,
+  colour = 'Species', frame = TRUE)
+pca
+```
+
+#### Clustering
+
+The `autoplotly` package also supports `cluster::clara`, `cluster::fanny`, `cluster::pam` as well as `cluster::silhouette` classes. It automatically infers the object type and generate interactive plots of the results from those packages with a single function call. Visualization of convex for each cluster in the `iris` data set:
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+autoplotly(fanny(iris[-5], 3), frame = TRUE)
+```
+
+By specifying frame, we are able to draw boundaries of different shapes. The different frame types can be found in `ggplot2::stat_ellipse`’s `type` keyword via `frame.type` option. Visualization of probability ellipse for `iris` data set:
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+autoplotly(pam(iris[-5], 3), frame = TRUE, frame.type = 'norm')
+```
+
+#### Forecasting
+
+Forecasting packages such as `forecast`, `changepoint`, `strucchange`, and `KFAS`, are popular choices for statisticians and researchers. Interactive visualizations of predictions and statistical results from those packages can be generated automatically using the functions provided by `autoplotly` with the help of `ggfortify`.
+
+The `changepoint` package provides a simple approach for identifying shifts in mean and/or variance in a time series. `ggfortify` supports `cpt` object in `changepoint` package.
+
+Visualization of the change points with optimal positioning for the `AirPassengers` data set found in the `changepoint` package using the `cpt.meanvar` function:
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+autoplotly(cpt.meanvar(AirPassengers))
+```
+
+Visualization of the original and smoothed line in `KFAS` package:
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+model <- SSModel(
+  Nile ~ SSMtrend(degree=1, Q=matrix(NA)), H=matrix(NA)
+)
+
+fit <- fitSSM(model=model, inits=c(log(var(Nile)),log(var(Nile))), method="BFGS")
+smoothed <- KFS(fit$model)
+autoplotly(smoothed)
+```
+
+Visualization of filtered result and smoothed line:
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+trend <- signal(smoothed, states="trend")
+filtered <- KFS(fit$model, filtering="mean", smoothing='none')
+p <- autoplot(filtered)
+autoplotly(trend, ts.colour = 'blue', p = p)
+```
+
+Visualization of optimal break points where possible structural changes happen in the regression models built by `strucchange::breakpoints`:
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+autoplotly(breakpoints(Nile ~ 1), ts.colour = "blue", ts.linetype = "dashed",
+           cpt.colour = "dodgerblue3", cpt.linetype = "solid")
+```
+
+#### Splines
+
+The `autoplotly` can also automatically generate interactive plots for results produced by **splines**.
+
+B-spline basis points visualization for natural cubic spline with boundary knots produced from `splines::ns`:
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+autoplotly(ns(ggplot2::diamonds$price, df = 6))
+```
+
+### Extensibility and Composability
+
+The plots generated using `autoplotly()` can be easily extended by applying additional `ggplot2` elements or components. For example, we can add title and axis labels to the originally generated plot using `ggplot2::ggtitle` and `ggplot2::labs`:
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+autoplotly(
+  prcomp(iris[c(1, 2, 3, 4)]), data = iris, colour = 'Species', frame = TRUE) +
+  ggplot2::ggtitle("Principal Components Analysis") +
+  ggplot2::labs(y = "Second Principal Component", x = "First Principal Component")
+```
+
+Similarly, we can add additional interactive components using `plotly`. The following example adds a custom `plotly` annotation element placed to the center of the plot with an arrow:
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+p <- autoplotly(prcomp(iris[c(1, 2, 3, 4)]), data = iris,
+  colour = 'Species', frame = TRUE)
+
+p %>% plotly::layout(annotations = list(
+  text = "Example Content",
+  font = list(
+    family = "Courier New, monospace",
+    size = 18,
+    color = "black"),
+  x = 0,
+  y = 0,
+  showarrow = TRUE))
+```
+
+We can also stack multiple plots generated from `autoplotly()` together in a single view using `subplot()`, two interactive splines visualizations with different degree of freedom are stacked into one single view in the following example:
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+subplot(
+  autoplotly(ns(ggplot2::diamonds$price, df = 6)),
+  autoplotly(ns(ggplot2::diamonds$price, df = 3)), nrows = 2, margin = 0.03)
+```
+
+This tutorial provides a brief introduction for interactive data visualization tools. As we can see, `ggfortify` and `autoplotly` generate interactive visualizations for many popular statistical results. I learned how to build beautiful visualizations of statistical results with concise code. In the future, I will try to plot more statistical models with `ggfortify` and `autoplotly`.
+
+
+### References
+
+1. http://www.sthda.com/english/wiki/ggfortify-extension-to-ggplot2-to-handle-some-popular-packages-r-software-and-data-visualization
+2. https://github.com/sinhrks/ggfortify
+3. https://terrytangyuan.github.io/2018/02/12/autoplotly-intro/
+4. https://cran.r-project.org/web/packages/ggfortify/vignettes/basics.html
+5. https://cran.r-project.org/web/packages/ggfortify/vignettes/plot_ts.html
+6. https://cran.r-project.org/web/packages/ggfortify/vignettes/plot_pca.html
+
