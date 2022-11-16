@@ -1,5 +1,7 @@
-## Explanation for the community contribution project
+# Machine Learning Interview mindmap and commonly asked questions
+
 Haolong Liu
+
 As the community contribution, [mindmap can be found here](resources/ml_interview_concept_mindmap/ml_mindmap.pdf)
 
 Description: I created a mind map for machine learning interviews and included many commonly asked questions, so that it gives people a broad understanding of many machine learning concepts and how to articulate these knowledge during an interview.
