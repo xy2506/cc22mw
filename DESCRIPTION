@@ -50,7 +50,13 @@ Suggests:
     strucchange,
     splines,
     bestparcoords,
-    BSDA
+    BSDA,
+    gapminder,
+    heatmaply,
+    treemap,
+    collapsibleTree,
+    networkD3
+    
 Remotes:
     hadley/emo,
     ShubhamKaushal15/bestparcoords
