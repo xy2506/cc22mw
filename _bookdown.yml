@@ -29,6 +29,7 @@ rmd_files: [
   'inflation_web_scraping.Rmd',
   'dygraph_tutorial.Rmd',
   'two_fun_r_packages.Rmd',
+  'wordcloud_tutorial.Rmd',
   
   # Part: Workshops
   'edavsurveyandanalysis.Rmd',
