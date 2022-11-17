@@ -75,4 +75,5 @@ Suggests:
 Remotes:
     hadley/emo,
     ShubhamKaushal15/bestparcoords,
-    Nowosad/spDataLarge
+    Nowosad/spDataLarge,
+    rstudio/d3heatmap
