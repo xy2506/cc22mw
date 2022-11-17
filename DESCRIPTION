@@ -61,7 +61,8 @@ Suggests:
     raster,
     spData,
     tmap,
-    spDataLarge
+    spDataLarge,
+    grid
 Remotes:
     hadley/emo,
     ShubhamKaushal15/bestparcoords,

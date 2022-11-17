@@ -46,7 +46,7 @@ rmd_files: [
   'interactive_plots_in_r.Rmd',
   'introduction_to_plotly.Rmd',
   'ml_interview_concept_mindmap.Rmd',
-  'geocomputationwithr.Rmd',
+  'python_seaborn.Rmd',
   
   # Part: Workshops
   'edavsurveyandanalysis.Rmd',
