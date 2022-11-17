@@ -60,7 +60,8 @@ Suggests:
     sf,
     raster,
     spData,
-    tmap
+    tmap,
+    spDataLarge
 Remotes:
     hadley/emo,
     ShubhamKaushal15/bestparcoords,
