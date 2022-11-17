@@ -67,7 +67,11 @@ Suggests:
     readxl,
     d3heatmap,
     ggridges,
-    igraph
+    igraph,
+    carData,
+    circlize,
+    RColorBrewer,
+    chorddiag
 Remotes:
     hadley/emo,
     ShubhamKaushal15/bestparcoords,
