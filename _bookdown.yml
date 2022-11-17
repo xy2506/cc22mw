@@ -50,6 +50,7 @@ rmd_files: [
   'tutorial_of_making_different_types_of_interactive_graphs.Rmd',
   'ggplotscheatsheet.Rmd',
   'chord_diagrams.Rmd',
+  'resparking_creativity_for_visualizations.Rmd',
   
   # Part: Workshops
   'edavsurveyandanalysis.Rmd',
