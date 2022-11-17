@@ -49,6 +49,7 @@ rmd_files: [
   'python_seaborn.Rmd',
   'tutorial_of_making_different_types_of_interactive_graphs.Rmd',
   'ggplotscheatsheet.Rmd',
+  'chord_diagrams.Rmd',
   
   # Part: Workshops
   'edavsurveyandanalysis.Rmd',
