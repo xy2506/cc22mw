@@ -55,7 +55,26 @@ Suggests:
     heatmaply,
     treemap,
     collapsibleTree,
-    networkD3
+    networkD3,
+    leaflet,
+    sf,
+    raster,
+    spData,
+    tmap,
+    spDataLarge,
+    grid,
+    httr,
+    readxl,
+    d3heatmap,
+    ggridges,
+    igraph,
+    carData,
+    circlize,
+    RColorBrewer,
+    chorddiag
 Remotes:
     hadley/emo,
-    ShubhamKaushal15/bestparcoords
+    ShubhamKaushal15/bestparcoords,
+    Nowosad/spDataLarge,
+    rstudio/d3heatmap,
+    mattflor/chorddiag

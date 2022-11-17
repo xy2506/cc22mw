@@ -46,6 +46,10 @@ rmd_files: [
   'interactive_plots_in_r.Rmd',
   'introduction_to_plotly.Rmd',
   'ml_interview_concept_mindmap.Rmd',
+  'python_seaborn.Rmd',
+  'tutorial_of_making_different_types_of_interactive_graphs.Rmd',
+  'ggplotscheatsheet.Rmd',
+  'chord_diagrams.Rmd',
   
   # Part: Workshops
   'edavsurveyandanalysis.Rmd',
