@@ -62,7 +62,12 @@ Suggests:
     spData,
     tmap,
     spDataLarge,
-    grid
+    grid,
+    httr,
+    readxl,
+    d3heatmap,
+    ggridges,
+    igraph
 Remotes:
     hadley/emo,
     ShubhamKaushal15/bestparcoords,
