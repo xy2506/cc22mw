@@ -76,4 +76,5 @@ Remotes:
     hadley/emo,
     ShubhamKaushal15/bestparcoords,
     Nowosad/spDataLarge,
-    rstudio/d3heatmap
+    rstudio/d3heatmap,
+    mattflor/chorddiag
