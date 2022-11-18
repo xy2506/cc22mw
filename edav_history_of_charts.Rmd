@@ -10,6 +10,7 @@ This project addresses the needs of those individuals who want to learn more abo
 
 I have learned how to research more thoroughly and be more cautious of the resources I use. For example, for some of the charts there was a contradiction between who created a chart, but this is because of the difference between who coined the chart name and who actually created the chart. I could only find which person did which through more careful research. Next time, I will show more restraint when falling down the rabbit hole of research.
 
+A link to the pdf file, that contains another timeline chart can be seen in resources/edav_history_of_charts/EDAV_CC.
 ```{r , include=FALSE}
 library(vistime)
 library(ggplot2)
