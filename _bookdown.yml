@@ -51,6 +51,7 @@ rmd_files: [
   'ggplotscheatsheet.Rmd',
   'chord_diagrams.Rmd',
   'resparking_creativity_for_visualizations.Rmd',
+  'machine_learning_r.Rmd',
   
   # Part: Workshops
   'edavsurveyandanalysis.Rmd',
