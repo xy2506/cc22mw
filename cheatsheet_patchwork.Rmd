@@ -2,6 +2,9 @@
 
 Maria Pratyusha
 
+Link to presentation and resources :- <https://docs.google.com/presentation/d/1nKju2-jcMC8Ep7tjBPAkacSX181DVra8hawrTlqaF7Q/edit?usp=sharing>
+
+
 Import the dataset
 ```{r}
 data("iris")
