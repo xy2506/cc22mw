@@ -96,4 +96,44 @@ timelineS(dta, main = "Charts Timeline",label.position = c(1,2))
 
 -   In 2008, he also created Wordle.
 
-References: Encyclopædia Britannica, inc. (n.d.). Karl Pearson. Encyclopædia Britannica. Retrieved November 15, 2022, from <https://www.britannica.com/biography/Karl-Pearson> John Tukey - Biography. Maths History. (n.d.). Retrieved November 15, 2022, from <https://mathshistory.st-andrews.ac.uk/Biographies/Tukey/> Kopf, D. (2022, March 20). When did charts become popular? Priceonomics. Retrieved November 15, 2022, from <https://priceonomics.com/when-did-charts-become-popular/#>:\~:text=The%20modern%20statistical%20chart%20was,line%20chart%2C%20and%20pie%20chart. Pluviophile, PluviophilePluviophile 2, & Abdul-Kareem Abdul-RahmanAbdul-Kareem Abdul-Rahman 13655 bronze badges. (1967, October 1). Who invented the "histogram"? Cross Validated. Retrieved November 15, 2022, from <https://stats.stackexchange.com/questions/479735/who-invented-the-histogram> Samuel Wilks - Biography. Maths History. (n.d.). Retrieved November 15, 2022, from <https://mathshistory.st-andrews.ac.uk/Biographies/Wilks/> Scutaru, C. (2019, July 2). History of charts: Who invented this chart type? Data Xtractor. Retrieved November 15, 2022, from <https://data-xtractor.com/blog/data-visualization/chart-history-who-invented-this-chart-type/> Scutaru, C. (2019, July 2). History of charts: Who invented this chart type? Data Xtractor. Retrieved November 15, 2022, from <https://data-xtractor.com/blog/data-visualization/chart-history-who-invented-this-chart-type/> What are heat maps? guide to heatmaps/how to use them. Hotjar. (n.d.). Retrieved November 15, 2022, from <https://www.hotjar.com/heatmaps/> Wikimedia Foundation. (2018, September 27). K. Ruben Gabriel. Wikipedia. Retrieved November 15, 2022, from <https://en.wikipedia.org/wiki/K._Ruben_Gabriel> Wikimedia Foundation. (2020, December 10). Samuel S. Wilks. Wikipedia. Retrieved November 15, 2022, from <https://en.wikipedia.org/wiki/Samuel_S._Wilks> Wikimedia Foundation. (2020, January 8). The grammar of science. Wikipedia. Retrieved November 15, 2022, from <https://en.wikipedia.org/wiki/The_Grammar_of_Science> Wikimedia Foundation. (2022, April 23). Philbert Maurice d'ocagne. Wikipedia. Retrieved November 15, 2022, from <https://en.wikipedia.org/wiki/Philbert_Maurice_d%27Ocagne> Wikimedia Foundation. (2022, August 30). Edward Tufte. Wikipedia. Retrieved November 15, 2022, from <https://en.wikipedia.org/wiki/Edward_Tufte> Wikimedia Foundation. (2022, July 9). Parallel coordinates. Wikipedia. Retrieved November 15, 2022, from <https://en.wikipedia.org/wiki/Parallel_coordinates> Wikimedia Foundation. (2022, October 2). Karl Pearson. Wikipedia. Retrieved November 15, 2022, from <https://en.wikipedia.org/wiki/Karl_Pearson> Wikimedia Foundation. (2022, October 28). John Tukey. Wikipedia. Retrieved November 15, 2022, from <https://en.wikipedia.org/wiki/John_Tukey> Wikimedia Foundation. (2022, October 3). Histogram. Wikipedia. Retrieved November 15, 2022, from <https://en.wikipedia.org/wiki/Histogram> Wikimedia Foundation. (2022, October 30). American Recovery and Reinvestment Act of 2009. Wikipedia. Retrieved November 15, 2022, from <https://en.wikipedia.org/wiki/American_Recovery_and_Reinvestment_Act_of_2009> Wikimedia Foundation. (2022, September 17). Alfred Inselberg. Wikipedia. Retrieved November 15, 2022, from <https://en.wikipedia.org/wiki/Alfred_Inselberg> Wikimedia Foundation. (2022, September 9). William S. Cleveland. Wikipedia. Retrieved November 15, 2022, from <https://en.wikipedia.org/wiki/William_S._Cleveland> William Playfair founds statistical graphics, and invents the line chart and Bar Chart. William Playfair Founds Statistical Graphics, and Invents the Line Chart and Bar Chart : History of Information. (n.d.). Retrieved November 15, 2022, from <https://www.historyofinformation.com/detail.php?entryid=2929>
+References:
+
+-   Encyclopædia Britannica, inc. (n.d.). Karl Pearson. Encyclopædia Britannica. Retrieved November 15, 2022, from <https://www.britannica.com/biography/Karl-Pearson>
+
+-   John Tukey - Biography. Maths History. (n.d.). Retrieved November 15, 2022, from <https://mathshistory.st-andrews.ac.uk/Biographies/Tukey/> Kopf, D. (2022, March 20).
+
+-   When did charts become popular? Priceonomics. Retrieved November 15, 2022, from <https://priceonomics.com/when-did-charts-become-popular/#>:\~:text=The%20modern%20statistical%20chart%20was,line%20chart%2C%20and%20pie%20chart. Pluviophile, PluviophilePluviophile 2, & Abdul-Kareem Abdul-RahmanAbdul-Kareem Abdul-Rahman 13655 bronze badges. (1967, October 1).
+
+-   Who invented the "histogram"? Cross Validated. Retrieved November 15, 2022, from <https://stats.stackexchange.com/questions/479735/who-invented-the-histogram>
+
+-   Samuel Wilks - Biography. Maths History. (n.d.). Retrieved November 15, 2022, from <https://mathshistory.st-andrews.ac.uk/Biographies/Wilks/> Scutaru, C. (2019, July 2).
+
+-   History of charts: Who invented this chart type? Data Xtractor. Retrieved November 15, 2022, from <https://data-xtractor.com/blog/data-visualization/chart-history-who-invented-this-chart-type/> Scutaru, C. (2019, July 2).
+
+-   What are heat maps? guide to heatmaps/how to use them. Hotjar. (n.d.). Retrieved November 15, 2022, from <https://www.hotjar.com/heatmaps/>
+
+-   Wikimedia Foundation. (2018, September 27). K. Ruben Gabriel. Wikipedia. Retrieved November 15, 2022, from <https://en.wikipedia.org/wiki/K._Ruben_Gabriel>
+
+-    Wikimedia Foundation. (2020, December 10). Samuel S. Wilks. Wikipedia. Retrieved November 15, 2022, from <https://en.wikipedia.org/wiki/Samuel_S._Wilks>
+
+-   Wikimedia Foundation. (2020, January 8). The grammar of science. Wikipedia. Retrieved November 15, 2022, from <https://en.wikipedia.org/wiki/The_Grammar_of_Science>
+
+-   Wikimedia Foundation. (2022, April 23). Philbert Maurice d'ocagne. Wikipedia. Retrieved November 15, 2022, from <https://en.wikipedia.org/wiki/Philbert_Maurice_d%27Ocagne>
+
+-   Wikimedia Foundation. (2022, August 30). Edward Tufte. Wikipedia. Retrieved November 15, 2022, from <https://en.wikipedia.org/wiki/Edward_Tufte>
+
+-   Wikimedia Foundation. (2022, July 9). Parallel coordinates. Wikipedia. Retrieved November 15, 2022, from <https://en.wikipedia.org/wiki/Parallel_coordinates>
+
+-   Wikimedia Foundation. (2022, October 2). Karl Pearson. Wikipedia. Retrieved November 15, 2022, from <https://en.wikipedia.org/wiki/Karl_Pearson> '
+
+-   Wikimedia Foundation. (2022, October 28). John Tukey. Wikipedia. Retrieved November 15, 2022, from <https://en.wikipedia.org/wiki/John_Tukey>
+
+-   Wikimedia Foundation. (2022, October 3). Histogram. Wikipedia. Retrieved November 15, 2022, from <https://en.wikipedia.org/wiki/Histogram>
+
+-    Wikimedia Foundation. (2022, October 30). American Recovery and Reinvestment Act of 2009. Wikipedia. Retrieved November 15, 2022, from <https://en.wikipedia.org/wiki/American_Recovery_and_Reinvestment_Act_of_2009>
+
+-   Wikimedia Foundation. (2022, September 17). Alfred Inselberg. Wikipedia. Retrieved November 15, 2022, from <https://en.wikipedia.org/wiki/Alfred_Inselberg>
+
+-   Wikimedia Foundation. (2022, September 9). William S. Cleveland. Wikipedia. Retrieved November 15, 2022, from <https://en.wikipedia.org/wiki/William_S._Cleveland>
+
+-   William Playfair founds statistical graphics, and invents the line chart and Bar Chart. William Playfair Founds Statistical Graphics, and Invents the Line Chart and Bar Chart : History of Information. (n.d.). Retrieved November 15, 2022, from <https://www.historyofinformation.com/detail.php?entryid=2929>
