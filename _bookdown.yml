@@ -29,7 +29,6 @@ rmd_files: [
   
   # Part: Workshops
   'edavsurveyandanalysis.Rmd',
-  'bubble_chart_application.Rmd'
   
   # Part: Appendices
   'appendix_initial_setup.Rmd', # contains PART header
