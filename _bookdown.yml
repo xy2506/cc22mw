@@ -56,6 +56,7 @@ rmd_files: [
   'time_series_visualization_r_tutorial.Rmd',
   'bubble_chart_application.Rmd',
   'edav_history_of_charts.Rmd',
+  'r_neural_network.Rmd',
   
   # Part: Workshops
   'edavsurveyandanalysis.Rmd',
