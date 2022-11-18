@@ -57,6 +57,7 @@ rmd_files: [
   'bubble_chart_application.Rmd',
   'edav_history_of_charts.Rmd',
   'r_neural_network.Rmd',
+  'python_geospatial_visualization.Rmd',
   
   # Part: Workshops
   'edavsurveyandanalysis.Rmd',
