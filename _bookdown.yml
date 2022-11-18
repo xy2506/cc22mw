@@ -58,6 +58,7 @@ rmd_files: [
   # Part: Workshops
   'edavsurveyandanalysis.Rmd',
   'network_visualization.Rmd',
+  'misleading_visualizations.Rmd',
   
   # Part: Appendices
   'appendix_initial_setup.Rmd', # contains PART header
