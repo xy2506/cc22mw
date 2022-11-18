@@ -76,7 +76,9 @@ Suggests:
     xts,
     fpp2, 
     vistime, 
-    scales
+    scales, 
+    keras, 
+    tensorflow
 Remotes:
     hadley/emo,
     ShubhamKaushal15/bestparcoords,
