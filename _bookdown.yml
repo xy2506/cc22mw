@@ -52,6 +52,7 @@ rmd_files: [
   'chord_diagrams.Rmd',
   'resparking_creativity_for_visualizations.Rmd',
   'machine_learning_r.Rmd',
+  'edav_data_importance.Rmd',
   
   # Part: Workshops
   'edavsurveyandanalysis.Rmd',
