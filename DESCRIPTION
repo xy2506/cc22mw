@@ -78,7 +78,8 @@ Suggests:
     vistime, 
     scales, 
     keras, 
-    tensorflow
+    tensorflow, 
+    timelineS
 Remotes:
     hadley/emo,
     ShubhamKaushal15/bestparcoords,
