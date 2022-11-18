@@ -77,8 +77,8 @@ Suggests:
     fpp2, 
     vistime, 
     scales, 
-    keras, 
-    tensorflow, 
+    tensorflow,
+    keras,
     timelineS
 Remotes:
     hadley/emo,
