@@ -60,8 +60,29 @@ Suggests:
     sf,
     raster,
     spData,
+    tmap,
     spDataLarge,
-    tmap
+    grid,
+    httr,
+    readxl,
+    d3heatmap,
+    ggridges,
+    igraph,
+    carData,
+    circlize,
+    RColorBrewer,
+    chorddiag,
+    TSstudio,
+    xts,
+    fpp2, 
+    vistime, 
+    scales, 
+    tensorflow,
+    keras,
+    timelineS
 Remotes:
     hadley/emo,
-    ShubhamKaushal15/bestparcoords
+    ShubhamKaushal15/bestparcoords,
+    Nowosad/spDataLarge,
+    rstudio/d3heatmap,
+    mattflor/chorddiag
