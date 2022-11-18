@@ -55,6 +55,7 @@ rmd_files: [
   'edav_data_importance.Rmd',
   'time_series_visualization_r_tutorial.Rmd',
   'bubble_chart_application.Rmd',
+  'edav_history_of_charts.Rmd',
   
   # Part: Workshops
   'edavsurveyandanalysis.Rmd',
