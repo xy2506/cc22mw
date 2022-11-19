@@ -65,7 +65,7 @@ As you probably noticed, the available themes are very limited in RStudio so it 
 ```{r}
 # Install the package
 # devtools::install_github("gadenbuie/rsthemes")
-# library(rsthemes)
+library(rsthemes)
 ```
 
 Please make sure you have "devtools" installed. If you have not, installed it first using the following commands:
