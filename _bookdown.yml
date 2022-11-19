@@ -61,6 +61,7 @@ rmd_files: [
   'playful_r_packages.rmd',
   #'geocomputationwithr.Rmd',
   'ggvis_cheatsheet.Rmd',
+  'cheatsheet_patchwork.Rmd',
   
   # Part: Workshops
   'edavsurveyandanalysis.Rmd',
