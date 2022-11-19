@@ -86,4 +86,5 @@ Remotes:
     Nowosad/spDataLarge,
     rstudio/d3heatmap,
     mattflor/chorddiag,
-    daheelee/timelineS
+    daheelee/timelineS,
+    rstudio/tensorflow
