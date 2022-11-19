@@ -60,7 +60,7 @@ rmd_files: [
   'bioconductor.Rmd',
   'playful_r_packages.rmd',
   #'geocomputationwithr.Rmd',
-  'ggvis_cheatsheet.Rmd'
+  'ggvis_cheatsheet.Rmd',
   
   # Part: Workshops
   'edavsurveyandanalysis.Rmd',
