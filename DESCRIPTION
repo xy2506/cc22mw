@@ -77,11 +77,14 @@ Suggests:
     fpp2, 
     vistime, 
     scales, 
-    keras, 
-    tensorflow
+    tensorflow,
+    keras,
+    timelineS
 Remotes:
     hadley/emo,
     ShubhamKaushal15/bestparcoords,
     Nowosad/spDataLarge,
     rstudio/d3heatmap,
-    mattflor/chorddiag
+    mattflor/chorddiag,
+    daheelee/timelineS,
+    rstudio/tensorflow
