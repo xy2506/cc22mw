@@ -71,10 +71,20 @@ Suggests:
     carData,
     circlize,
     RColorBrewer,
-    chorddiag
+    chorddiag,
+    TSstudio,
+    xts,
+    fpp2, 
+    vistime, 
+    scales, 
+    tensorflow,
+    keras,
+    timelineS
 Remotes:
     hadley/emo,
     ShubhamKaushal15/bestparcoords,
     Nowosad/spDataLarge,
     rstudio/d3heatmap,
-    mattflor/chorddiag
+    mattflor/chorddiag,
+    daheelee/timelineS,
+    rstudio/tensorflow
