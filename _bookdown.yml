@@ -59,6 +59,7 @@ rmd_files: [
   'r_neural_network.Rmd',
   'bioconductor.Rmd',
   'playful_r_packages.rmd',
+  #'geocomputationwithr.Rmd',
   
   # Part: Workshops
   'edavsurveyandanalysis.Rmd',
