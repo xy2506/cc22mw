@@ -79,7 +79,8 @@ Suggests:
     scales, 
     tensorflow,
     keras,
-    timelineS
+    timelineS,
+    patchwork
 Remotes:
     hadley/emo,
     ShubhamKaushal15/bestparcoords,
