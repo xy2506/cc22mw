@@ -23,7 +23,7 @@ We here provide an example of a use case:
 * Gradient descent is the intended method to minimize the negative log-likelihood function.
 
 ```{r, echo=FALSE}
-knitr::include_graphics("resources/plotly_python_3d_surface_images/maximum_likelihood_function.jpg")
+knitr::include_graphics("resources/plotly_python_3d_surface_images/maximum_likelihood_function.JPG")
 ```
 
 Any gradient descent problem with 2 parameters can be fit into the Python template below. The only thing that need to be updated is the negative log-likelihood function. 
