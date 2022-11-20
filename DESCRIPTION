@@ -71,7 +71,14 @@ Suggests:
     carData,
     circlize,
     RColorBrewer,
-    chorddiag
+    chorddiag,
+    TSstudio,
+    xts,
+    fpp2, 
+    vistime, 
+    scales, 
+    keras, 
+    tensorflow
 Remotes:
     hadley/emo,
     ShubhamKaushal15/bestparcoords,

@@ -51,9 +51,17 @@ rmd_files: [
   'ggplotscheatsheet.Rmd',
   'chord_diagrams.Rmd',
   'resparking_creativity_for_visualizations.Rmd',
+  'machine_learning_r.Rmd',
+  'edav_data_importance.Rmd',
+  'time_series_visualization_r_tutorial.Rmd',
+  'bubble_chart_application.Rmd',
+  'edav_history_of_charts.Rmd',
+  'r_neural_network.Rmd',
   
   # Part: Workshops
   'edavsurveyandanalysis.Rmd',
+  'network_visualization.Rmd',
+  'misleading_visualizations.Rmd',
   
   # Part: Appendices
   'appendix_initial_setup.Rmd', # contains PART header
