@@ -62,7 +62,7 @@ rmd_files: [
   #'geocomputationwithr.Rmd',
   'ggvis_cheatsheet.Rmd',
   'cheatsheet_patchwork.Rmd',
-  #'plotly_python_surface.Rmd',
+  'plotly_python_surface.Rmd',
   'rstudio_editor_theme_setup_tutorial.Rmd',
   
   # Part: Workshops
