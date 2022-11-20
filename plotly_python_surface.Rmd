@@ -33,7 +33,7 @@ Any gradient descent problem with 2 parameters can be fit into the Python templa
 knitr::opts_chunk$set(warning = FALSE, message = FALSE)
 ```
 
-```{python, eval=False}
+```{python, eval=FALSE}
 import numpy as np
 import plotly.graph_objects as go
 
